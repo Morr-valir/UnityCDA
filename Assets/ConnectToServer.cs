@@ -20,7 +20,10 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
+
         PhotonNetwork.JoinLobby();
+        Debug.Log("We are now connected to the " + PhotonNetwork.CloudRegion + " server!");
+
     }
 
     public override void OnJoinedLobby()
