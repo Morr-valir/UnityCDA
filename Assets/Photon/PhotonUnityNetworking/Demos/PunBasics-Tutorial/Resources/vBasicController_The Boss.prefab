@@ -461,6 +461,8 @@ GameObject:
   - component: {fileID: 8963085815456712032}
   - component: {fileID: 5421762320411633383}
   - component: {fileID: -121150678809978425}
+  - component: {fileID: 2067469825882080041}
+  - component: {fileID: 5431789933245172091}
   m_Layer: 0
   m_Name: vBasicController_The Boss
   m_TagString: Player
@@ -628,6 +630,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 8963085815456712032}
   - {fileID: 5421762320411633383}
+  - {fileID: 2067469825882080041}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -678,8 +681,36 @@ MonoBehaviour:
   distance: 7
   height: 6
   centerOffset: {x: 0, y: 2, z: 0}
-  followOnStart: 1
+  followOnStart: 0
   smoothSpeed: 1
+--- !u!114 &2067469825882080041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803178354170507602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98fac77b304554f238a61572f5720187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 1
+  playerUiPrefab: {fileID: 170056, guid: e41946a981c3b444a84d15eb7c608ca4, type: 3}
+  beams: {fileID: 170262, guid: fe764102aa5aa431795da15fa2dec0e2, type: 3}
+--- !u!114 &5431789933245172091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803178354170507602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507e5741cec8a42dc964c8e0a4b55bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directionDampTime: 0.25
 --- !u!1 &813800966831764892
 GameObject:
   m_ObjectHideFlags: 0
