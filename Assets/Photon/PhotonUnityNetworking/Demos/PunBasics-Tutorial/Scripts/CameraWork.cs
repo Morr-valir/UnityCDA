@@ -62,6 +62,7 @@ namespace Photon.Pun.Demo.PunBasics
 			if (followOnStart)
 			{
 				OnStartFollowing();
+				Debug.Log("tst");
 			}
 		}
 
