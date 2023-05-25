@@ -569,7 +569,7 @@ MonoBehaviour:
   distance: 7
   height: 6
   centerOffset: {x: 0, y: 2, z: 0}
-  followOnStart: 1
+  followOnStart: 0
   smoothSpeed: 1
 --- !u!114 &11413802
 MonoBehaviour:
