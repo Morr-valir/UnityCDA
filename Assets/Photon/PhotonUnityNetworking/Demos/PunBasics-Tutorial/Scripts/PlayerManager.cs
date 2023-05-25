@@ -83,6 +83,7 @@ namespace Photon.Pun.Demo.PunBasics
 
             if (_cameraWork != null)
             {
+                Debug.Log("Camera work ok");
                 if (photonView.IsMine)
                 {
                     _cameraWork.OnStartFollowing();
