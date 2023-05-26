@@ -38,7 +38,7 @@ namespace Photon.Pun.Demo.PunBasics
 
         [Tooltip("The prefab to use for representing the player")]
         [SerializeField]
-        private GameObject[] playerPrefab;
+        private GameObject playerPrefab;
 
         #endregion
 
@@ -68,9 +68,9 @@ namespace Photon.Pun.Demo.PunBasics
 				if (PlayerManager.LocalPlayerInstance==null)
 				{
 				    Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
-					//Debug.Log(this.playerPrefab.name);
+
 					// we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-					PhotonNetwork.Instantiate(this.playerPrefab[0].name, new Vector3(0f,5f,0f), Quaternion.identity, 0);
+					PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f,5f,0f), Quaternion.identity, 0);
 				}else{
 
 					Debug.LogFormat("Ignoring scene load for {0}", SceneManagerHelper.ActiveSceneName);
@@ -134,7 +134,7 @@ namespace Photon.Pun.Demo.PunBasics
 		/// </summary>
 		public override void OnLeftRoom()
 		{
-			SceneManager.LoadScene("Lobby");
+			SceneManager.LoadScene("PunBasics-Launcher");
 		}
 
 		#endregion
